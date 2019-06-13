@@ -1,0 +1,25 @@
+﻿@model int
+
+<div class="body-content tw">
+    <div class="container">
+        <form action="Test" method="post">
+            <p>Please Enter your Age</p>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label>Age</label>
+                        @Html.TextBox("Age", Model, new { @class = "form-control", @type = "text" })
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <button class="btn btn-primary" type="submit" name="StepMove" value="-">Back</button>
+                    <button class="btn btn-primary" type="submit" name="StepMove" value="+">Finish</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
